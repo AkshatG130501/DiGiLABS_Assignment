@@ -23,13 +23,6 @@ export default function Notify() {
         }
     },[]);
 
-
-    useEffect(()=>{
-        if('Notification' in window){
-            requestNotificationPermission();
-        }
-    },[requestNotificationPermission]);
-
     return (
         <div className="flex flex-col w-[400px] h-[500px] rounded-lg space-y-20">
             <div className="flex flex-col justify-center items-center space-y-2">
