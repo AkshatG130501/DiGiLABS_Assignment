@@ -1,5 +1,5 @@
 'use client'
-import React, {useEffect, useCallback} from "react"
+import React, {useCallback} from "react"
 
 export default function Notify() {
 
