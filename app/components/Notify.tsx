@@ -17,7 +17,6 @@ export default function Notify() {
             Notification.requestPermission().then((permission) => {
                 if(permission === 'granted'){
                     console.log('Permission granted');
-                    sendNotification();
                 }
             })
         }
