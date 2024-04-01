@@ -1,5 +1,5 @@
 'use client'
-import React, {useCallback} from "react"
+import React, {useEffect,useCallback} from "react"
 
 export default function Notify() {
 
@@ -22,6 +22,12 @@ export default function Notify() {
             })
         }
     },[]);
+
+    useEffect(()=>{
+        if('Notification' in window){
+            requestNotificationPermission();
+        }
+    }, [requestNotificationPermission]);
 
     return (
         <div className="flex flex-col w-[400px] h-[500px] rounded-lg space-y-20">
