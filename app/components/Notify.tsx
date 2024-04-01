@@ -29,7 +29,7 @@ export default function Notify() {
     }, [requestNotificationPermission]);
 
     return (
-        <div className="flex flex-col w-[400px] h-[500px] rounded-lg space-y-20">
+        <div className="flex flex-col w-[400px] h-[500px] rounded-lg space-y-10 mt-4">
             <div className="flex flex-col justify-center items-center space-y-2">
             <h1 className="text-center text-6xl text-white text-3xl font-bold p-4">Notify</h1>
             <p className="text-gray-400 text-xl font-semibold">Click to get a Notification!</p>
